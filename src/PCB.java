@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class PCB {
     private int processID;
-    private int PC; //program counter
+    private int PC; // Program counter
     private int priority;
     private int[] registers;
     private String processName;
@@ -67,7 +67,9 @@ public class PCB {
 
     @Override
     public String toString() {
-        return processID + " " + PC + " " + priority + " " + Arrays.toString(registers)
-                + " " + processName + " " + processState + " " + Arrays.toString(openFiles);
+        return "[ " + "ID -> "+processID + ", name -> "+processName + ", PC -> "+PC
+                + ", priority -> "+priority + ", State -> "+processState
+                + ", registers -> "+Arrays.toString(registers) + ", openFiles -> "+Arrays.toString(openFiles) + " ]";
     }
+
 }
