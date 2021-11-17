@@ -13,7 +13,7 @@ public class Test {
         queue.push(new Node<>(d));
         queue.push(new Node<>(e));
         queue.printQueue();
-        System.out.println("E' stato rimosso --> " + queue.pop().toString());
+        System.out.println("E' stato rimosso --> " + queue.pop().toString()+"\n");
         queue.printQueue();
     }
 }

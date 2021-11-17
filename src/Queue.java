@@ -33,9 +33,9 @@ public class Queue<T> {
 
     public void printQueue(){
         Node tmp = head;
-        String out = "";
+        String out = "Queue:\n";
         while(tmp != null){
-            out += tmp.toString() + "\n";
+            out += "\t" + tmp.toString() + "\n";
             tmp = tmp.getNext();
         }
         System.out.println(out);
