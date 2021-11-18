@@ -7,7 +7,7 @@ public class Queue<T> {
         this.tail = null;
     }
 
-    public void push(Node<T> element){
+    public void push(T element){
         Node newOne = new Node(element);
         if(tail == null){ // If queue is empty
             head = newOne;
@@ -27,7 +27,7 @@ public class Queue<T> {
         return tmp;
     }
 
-    public void popByKey(Node<T> T){  //sistemero'
+    public void popByKey(T element){  //sistemero'
 
     }
 
