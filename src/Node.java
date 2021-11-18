@@ -12,16 +12,8 @@ public class Node <T>{
         return next;
     }
 
-    public T setElement() {
-        return element;
-    }
-
     public void setNext(Node<T> next) {
         this.next = next;
-    }
-
-    public void setElement(T element) {
-        this.element = element;
     }
 
     @Override

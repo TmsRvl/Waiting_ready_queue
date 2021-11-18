@@ -4,10 +4,8 @@ public class PCB {
     private int processID;
     private int PC; // Program counter
     private int priority;
-    private int[] registers;
     private String processName;
     private String processState;
-    private String[] openFiles;
 
     public PCB(int processID) {
         this.processID = processID;
@@ -21,20 +19,12 @@ public class PCB {
         this.priority = priority;
     }
 
-    public void setRegisters(int[] registers) {
-        this.registers = registers;
-    }
-
     public void setProcessName(String processName) {
         this.processName = processName;
     }
 
     public void setProcessState(String processState) {
         this.processState = processState;
-    }
-
-    public void setOpenFiles(String[] openFiles) {
-        this.openFiles = openFiles;
     }
 
     public int getProcessID() {
@@ -49,10 +39,6 @@ public class PCB {
         return priority;
     }
 
-    public int[] getRegisters() {
-        return registers;
-    }
-
     public String getProcessName() {
         return processName;
     }
@@ -61,15 +47,10 @@ public class PCB {
         return processState;
     }
 
-    public String[] getOpenFiles() {
-        return openFiles;
-    }
-
     @Override
     public String toString() {
-        return "[ " + "ID -> "+processID + ", name -> "+processName + ", PC -> "+PC
-                + ", priority -> "+priority + ", State -> "+processState
-                + ", registers -> "+Arrays.toString(registers) + ", openFiles -> "+Arrays.toString(openFiles) + " ]";
+        return "[ " + "id -> "+processID + ", name -> "+processName + ", pc -> "+PC
+                + ", priority -> "+priority + ", state -> "+processState + " ]";
     }
 
 }

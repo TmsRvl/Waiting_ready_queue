@@ -6,12 +6,12 @@ public class Test {
         PCB c = new PCB(3);
         PCB d = new PCB(4);
         PCB e = new PCB(5);
-        Queue<PCB> queue= new Queue<>();
-        queue.push(new Node<>(a));
-        queue.push(new Node<>(b));
-        queue.push(new Node<>(c));
-        queue.push(new Node<>(d));
-        queue.push(new Node<>(e));
+        Queue<PCB> queue= new Queue<>("queue");
+        queue.push(a);
+        queue.push(b);
+        queue.push(c);
+        queue.push(d);
+        queue.push(e);
         queue.printQueue();
         System.out.println("E' stato rimosso --> " + queue.pop().toString()+"\n");
         queue.printQueue();
