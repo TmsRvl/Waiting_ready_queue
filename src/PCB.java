@@ -6,6 +6,7 @@ public class PCB {
     private int priority;
     private String processName;
     private String processState;
+    private PCB next;
 
     public PCB(int processID) {
         this.processID = processID;
@@ -25,6 +26,14 @@ public class PCB {
 
     public void setProcessState(String processState) {
         this.processState = processState;
+    }
+
+    public PCB getNext() {
+        return next;
+    }
+
+    public void setNext(PCB next) {
+        this.next = next;
     }
 
     public int getProcessID() {
