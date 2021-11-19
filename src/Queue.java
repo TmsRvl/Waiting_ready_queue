@@ -19,14 +19,18 @@ public class Queue<T> {
         tail = newOne;
     }
 
-    public Node pop() {
+    public T pop() {
         if (head == null) // If queue is empty
             return null;
 
-        Node tmp = head;
+        Node<T> tmp = head;
         head = head.getNext();
         tmp.setNext(null);
-        return tmp;
+        return (T) tmp;
+    }
+
+    public Node<T> getHead() {
+        return head;
     }
 
     public void printQueue() {
@@ -38,5 +42,4 @@ public class Queue<T> {
         }
         System.out.println(out);
     }
-
 }
