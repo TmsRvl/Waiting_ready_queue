@@ -1,7 +1,7 @@
-import java.util.Arrays;
 
 public class PCB {
-    private int processID;
+
+     private int processID;
     private int PC; // Program counter
     private int priority;
     private String processName;

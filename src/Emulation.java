@@ -49,7 +49,7 @@ public class Emulation {
         Scanner sc = new Scanner(System.in);
 
         while (!(r.isEmpty())) { // Until the ready queue is empty
-            String presentation = sc.nextLine();
+            String presentation = sc.nextLine(); // Used to run the program step by step
             PCB tmp = r.remove(0);
             System.out.println("\n>>In esecuzione sul core il processo " + tmp.getProcessName());
             long time = ((int) (Math.random() * (10 - 1) + 1)) * 1000;
