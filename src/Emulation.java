@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Emulation {
 
@@ -44,7 +45,11 @@ public class Emulation {
         }
 
         printStatus(r, w);
+
+        Scanner sc = new Scanner(System.in);
+
         while (!(r.isEmpty())) { // Until the ready queue is empty
+            String presentation = sc.nextLine();
             PCB tmp = r.remove(0);
             System.out.println("\n>>In esecuzione sul core il processo " + tmp.getProcessName());
             long time = ((int) (Math.random() * (10 - 1) + 1)) * 1000;
